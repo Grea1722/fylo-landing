@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+:root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  /* primary colors */
+
+  --dark-blue-intro: hsl(217, 28%, 15%);
+  --dark-blue-main: hsl(218, 28%, 13%);
+  --dark-blue-footer: hsl(216, 53%, 9%);
+  --dark-blue-testimonies: hsl(219, 30%, 18%);
+
+  /* accent */
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --ligth-red-error: hsl(0, 100%, 63%);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background: var(--dark-blue-intro);
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+  background-image: url("src/assets/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.header h2 {
+  font-weight: 700;
+}
+.header img {
+  width: 40%;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.header .text {
+  width: 40%;
+  text-align: center;
+}
+
+.text p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0 40px;
+}
+
+.header button {
+  background: linear-gradient(131deg, var(--cyan) 0%, var(--blue) 100%);
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.features {
+  background-color: var(--dark-blue-main);
+  margin: 0;
+  display: flex;
+}
+.features ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 0 400px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  list-style: none;
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  width: 80%;
+  margin: auto;
+}
+
+.callto {
+  background-color: var(--dark-blue-main);
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.callto img,
+.text {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+}
+
+.callto img {
+  margin-left: 50px;
+}
+.callto .text {
+  color: #fff;
+  padding: 40px;
+}
+
+.callto .text h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  width: 400px;
+}
+
+.callto .text p {
+  text-align: justify;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.callto .text a {
+  color: var(--cyan);
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.callto .text a img {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.callto .text a:hover {
+  color: white;
+}
+
+.callto .text a img:hover {
+  fill: hsl(0, 0%, 100%);
+}
