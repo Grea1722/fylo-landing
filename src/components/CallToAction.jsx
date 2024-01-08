@@ -1,5 +1,8 @@
 import stayIllus from "../assets/illustration-stay-productive.png";
 import arrowIcon from "../assets/icon-arrow.svg";
+import { comments } from "./js/comments";
+
+const cards = comments;
 
 export const CallToAction = () => {
   return (

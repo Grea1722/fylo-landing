@@ -83,6 +83,12 @@ body {
   border: none;
   margin-top: 40px;
   margin-bottom: 100px;
+  color: #fff;
+}
+
+.header button:hover {
+  background: var(--cyan);
+  cursor: pointer;
 }
 
 .features {
@@ -172,4 +178,50 @@ body {
 
 .callto .text a img:hover {
   fill: hsl(0, 0%, 100%);
+}
+
+.comments {
+  background-color: var(--dark-blue-main);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.comments .card {
+  background-color: var(--dark-blue-testimonies);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.comments .card .user {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.comments .card .user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  margin: 0 20px;
+}
+
+.comments .card .user .data h3 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.comments .card .user .data h4 {
+  font-size: 0.8rem;
+  color: #f1eeee;
+  text-align: left;
+}
+
+.comments .card p {
+  font-size: 1.4rem;
+  text-align: left;
+  font-weight: 400;
 }
