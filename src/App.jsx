@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Features } from "./components/Features";
 import { CallToAction } from "./components/CallToAction";
 import { Comments } from "./components/Comments";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <Features />
       <CallToAction />
       <Comments />
+      <Footer />
     </div>
   );
 }

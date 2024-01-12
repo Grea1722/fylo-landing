@@ -18,6 +18,24 @@ export const Comments = () => {
           </section>
         </li>
       ))}
+
+      <section className="get-access">
+        <h3>Get early access today</h3>
+        <p>
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+        <section className="form">
+          <input
+            type="text"
+            name="mail"
+            id="mail"
+            placeholder="email@example.com"
+          />
+          <button>Get Started For Free</button>
+        </section>
+      </section>
     </div>
   );
 };
