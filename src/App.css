@@ -2,7 +2,6 @@
 :root {
   max-width: 1980px;
   margin: 0 auto;
-  padding: 2rem;
   box-sizing: border-box;
 
   /* primary colors */
@@ -32,6 +31,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 2rem;
 }
 
 .links a {
@@ -321,4 +321,107 @@ button:hover {
 .footer .info .links a {
   width: 100px;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Navigation adjustments */
+  .navbar {
+    padding-top: 1rem;
+  }
+
+  /* Header adjustments */
+  .header,
+  .features,
+  .callto,
+  .comments,
+  .footer {
+    padding: 20px;
+    min-width: 375px;
+    width: 100vw;
+  }
+  .header img {
+    width: 100%; /* Reduce image size */
+  }
+  .header .text {
+    width: 90%;
+    text-align: center;
+  }
+
+  /* Features section adjustments */
+  .features ul {
+    padding: 20px; /* Reduce padding */
+  }
+  .card {
+    flex-basis: 300px; /* Adjust card width */
+    margin: 15px; /* Reduce margin */
+  }
+
+  /* Call to action section adjustments */
+  .callto img,
+  .text {
+    width: 100%;
+  }
+  .callto img {
+    margin-left: 0px; /* Reduce margin */
+  }
+
+  .callto .text h3 {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .callto .text a img {
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 20px;
+  }
+
+  /* Testimonials section adjustments */
+  .comments .card {
+    padding: 15px 0; /* Reduce padding */
+  }
+
+  /* Get access section adjustments */
+  .get-access .form {
+    padding: 30px; /* Reduce padding */
+    flex-wrap: wrap;
+  }
+
+  .get-access h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  .get-access p {
+    font-size: 1.1rem;
+  }
+
+  .get-access .form input {
+    width: 70%;
+    height: 40px;
+    padding-left: 20px;
+    margin-right: 0px;
+  }
+
+  .get-access .form button {
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  /* Footer adjustments */
+  .footer .info {
+    flex-wrap: wrap; /* Allow content to wrap */
+  }
+  .footer .info .info-content {
+    margin: 20px; /* Reduce margin */
+  }
+  .footer .info .links {
+    margin-left: 30px; /* Reduce margin */
+  }
 }
